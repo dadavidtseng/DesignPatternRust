@@ -53,15 +53,15 @@ no_llvm_build
 /unicode-downloads
 /target
 /library/target
-/src/bootstrap/target
-/src/ci/citool/target
-/src/tools/x/target
+/AbstractFactory/src/bootstrap/target
+/AbstractFactory/src/ci/citool/target
+/AbstractFactory/src/tools/x/target
 # Created by `x vendor`
 /vendor
 # Created by default with `src/ci/docker/run.sh`
 /obj/
 # Created by nix dev shell / .envrc
-src/tools/nix-dev-shell/flake.lock
+AbstractFactory/src/tools/nix-dev-shell/flake.lock
 
 ## ICE reports
 rustc-ice-*.txt
@@ -87,7 +87,7 @@ __pycache__/
 node_modules
 package-lock.json
 package.json
-/src/doc/rustc-dev-guide/mermaid.min.js
+/AbstractFactory/src/doc/rustc-dev-guide/mermaid.min.js
 
 ## Rustdoc GUI tests
 tests/rustdoc-gui/src/**.lock

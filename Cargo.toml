@@ -6,5 +6,9 @@ edition = "2024"
 [dependencies]
 
 [[bin]]
-name = "AbstractFactory"
-path = "src/AbstractFactory/app/main.rs"
+name = "AbstractFactoryStatic"
+path = "AbstractFactory/src/app/main.rs"
+
+[[bin]]
+name = "AbstractFactoryDynamic"
+path = "AbstractFactory/src/app-dyn/main.rs"

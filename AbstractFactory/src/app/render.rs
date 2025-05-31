@@ -1,10 +1,7 @@
 ﻿//! The code demonstrates that it doesn't depend on a concrete
 //! factory implementation.
 
-#[path = "../../AbstractFactory/gui/lib.rs"]
-mod gui;
-
-use gui::GuiFactory;
+use crate::gui::GuiFactory;
 
 // Renders GUI. Factory object must be passed as a parameter to such the
 // generic function with factory invocation to utilize static dispatch.
@@ -14,7 +11,7 @@ pub fn render(factory: impl GuiFactory) {
     let checkbox1 = factory.create_checkbox();
     let checkbox2 = factory.create_checkbox();
 
-    use gui::{Button, Checkbox};
+    use crate::gui::{Button, Checkbox};
 
     button1.press();
     button2.press();

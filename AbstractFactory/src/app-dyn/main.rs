@@ -1,5 +1,10 @@
-﻿mod render;
-
+﻿#[path = "../../src/gui/lib.rs"]
+mod gui;
+#[path = "../../src/macos-gui/lib.rs"]
+mod macos_gui;
+mod render;
+#[path = "../../src/window-gui/lib.rs"]
+mod windows_gui;
 use render::render;
 
 use gui::GuiFactoryDynamic;

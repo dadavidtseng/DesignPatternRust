@@ -1,7 +1,7 @@
 //! The code demonstrates that it doesn't depend on a concrete
 //! factory implementation.
 
-use gui::GuiFactoryDynamic;
+use crate::gui::GuiFactoryDynamic;
 
 /// Renders GUI.
 pub fn render(factory: &dyn GuiFactoryDynamic) {
